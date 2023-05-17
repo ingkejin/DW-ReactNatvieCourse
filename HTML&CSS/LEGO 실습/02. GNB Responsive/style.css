@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.sm-hidden,
+.md-only,
+.lg-only,
+.visually-hidden {
+  display: none;
+}
+
+.gnb {
+  background-color: rgb(255, 204, 0);
+  border-bottom: 1px solid #e0e2e7;
+}
+
+.gnb-wrapper {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.logo {
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.gnb-icon-button {
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  transition: color 200ms ease-in-out;
+}
+
+.gnb-icon-button:active {
+  color: rgb(222, 0 , 0);
+}
+
+.lnb {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e2e7;
+}
+
+.lnb-list {
+  width: 95%;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.lnb-item a {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.lnb-item a:active {
+  color: rgb(222, 0 , 0);
+}
+
+.background {
+  height: 300px;
+  background-image: url('./images/lego.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sm-only {
+    display: none;
+  }
+
+  .md-only,
+  .sm-hidden {
+    display: block;
+  }
+
+  .gnb-wrapper {
+    height: 80px;
+  }
+  
+  .logo {
+    height: 60px;
+    position: static;
+    transform: none;
+    margin-right: 24px;
+  }
+  
+  .logo img {
+    height: 60px;
+  }
+
+  .gnb-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .gnb-nav-list {
+    display: flex;
+  }
+
+  .gnb-nav-item a {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 200ms ease-in-out;
+  }
+
+  .gnb-nav-item a:hover{
+    color: rgb(222, 0, 0);
+  }
+
+  .gnb-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .button-group {
+    display: flex;
+  }
+
+  .gnb-icon-button {
+    margin: 30px;
+  }
+
+  .my-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .my-menu-list {
+    display: flex;
+  }
+
+  .my-menu-item {
+    padding: 5px;
+  }
+
+  .my-menu-item i {
+    font-size: 20px;
+    transition: color 200ms ease-in-out;
+  }
+
+  .my-menu-item i:active {
+    color: #3f4150;
+  }
+
+  .background {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width : 1200px) {
+  .md-only,
+  .lg-hidden {
+    display: none;
+  }
+
+  .lg-only {
+    display: block;
+  }
+
+  .input-group {
+    position: relative;
+    margin-right: 20px;
+  }
+
+  .input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 20px;
+    color: #8c8d96;
+  }
+
+  .form-input {
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #e0e2e7;
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 40px;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .form-input:not(:disabled):hover {
+    background-color: #f7f8fa;
+  }
+
+  .form-input:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+
+  .avatar {
+    margin-right: 12px;
+  }
+
+  .background {
+    height: 500px;
+  }
+}

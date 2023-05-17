@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gnb 반응형 레고실습</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/522c2b7a73.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="global-hedaer">
+      <div class="gnb">
+        <div class="gnb-wrapper">
+          <div class="gnb-left">
+            <h1 class="logo">
+              <a href="">
+                <img src="./images/logo.png" alt="logo">
+              </a>
+            </h1>
+
+            <nav class="gnb-nav sm-hidden">
+              <h2 class="visually-hidden">메뉴</h2>
+              <ul class="gnb-nav-list">
+                <li class="gnb-nav-item"><a href="">제품쇼핑</a></li>
+                <li class="gnb-nav-item"><a href="">브랜드소개</a></li>
+                <li class="gnb-nav-item"><a href="">고객지원</a></li>
+                <li class="gnb-nav-item"><a href="">세일</a></li>
+              </ul>
+            </nav>
+
+            <button type="button" class="gnb-icon-button sm-only">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div class="gnb-right">
+            <div class="gnb-search lg-only">
+              <div class="input-group">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="form-input" type="text" placeholder="스토어 검색">
+              </div>
+            </div>
+
+            <div class="button-group">
+              <button type="button" class="gnb-icon-button lg-hidden">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+
+              <div class="my-menu sm-hidden">
+                <button type="button" class="my-menu-button">
+                  <div class="avatar">
+                    <img src="./images/user.jpeg" alt="유저 프로필">
+                  </div>
+                </button>
+
+                <!-- (T) my-menu-content -->
+                <div class="my-menu-content md-only">
+                  <ul class="my-menu-list">
+                    <li class="my-menu-item">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                    <li class="my-menu-item">
+                      <i class="fa-solid fa-right-from-bracket"></i>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- (D) my-menu-content -->
+                <div class="my-menu-content lg-only">
+                  <ul class="my-menu-list">
+                    <li class="my-menu-item">장바구니</li>
+                    <li class="my-menu-item">로그아웃</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="lnb">
+        <h1 class="visually-hidden">제품 메뉴</h1>
+        <ul class="lnb-list">
+          <li class="lnb-item"><a href="">신제품</a></li>
+          <li class="lnb-item"><a href="">독점제품</a></li>
+          <li class="lnb-item"><a href="">행사</a></li>
+          <li class="lnb-item"><a href="">아이디어</a></li>
+          <li class="lnb-item"><a href="">베스트셀러</a></li>
+          <li class="lnb-item"><a href="">레어제품</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="background"></div>
+    </main>
+  </div>
+</body>
+</html>
