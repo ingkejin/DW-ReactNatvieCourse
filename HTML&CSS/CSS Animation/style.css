@@ -1,0 +1,98 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  position: relative;
+  /* animation 이름 */
+  animation-name: move;
+  /* 재생 시간 */
+  animation-duration: 2s;
+  /* 재생 횟수 */
+  animation-iteration-count: infinite;
+  /* 애니메이션 재생 설정 */
+  /* 기본값 : normal  - 앞으로 재생 */
+  /* alternate : 앞, 뒤로 재생 */
+  /* reverse : 뒤에서 부터 앞으로 재생 */
+  /* alternate-reverse : 뒤에서 부터 앞으로 재생 / 앞 -> 뒤 */
+  animation-direction: alternate-reverse;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 100px;
+    background-color: red;
+  }
+  50% {
+    left: 200px;
+    background-color: blue;
+  }
+  75% {
+    left: 300px;
+    background-color: pink;
+  }
+  100% {
+    left: 400px;
+    background-color: green;
+  }
+}
+
+.line-active {
+  position: relative;
+  height: 80px;
+  background-color: lightblue;
+}
+
+
+
+.line-active span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: red;
+  box-shadow: 0 0 2px 1px red;
+  animation-name: move1;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.line-active span:nth-child(2) {
+  position: absolute;
+  top: 30px;
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: blue;
+  box-shadow: 0 0 2px 1px blue;
+  animation-name: move2;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-delay: 0.3s;
+}
+
+@keyframes move1 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 160px;
+  }
+}
+
+@keyframes move2 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 160px;
+  }
+}
+
