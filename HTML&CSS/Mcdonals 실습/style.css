@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.sm-only {
+  display: none;
+}
+
+.gnb-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo img {
+  width: 70px;
+  margin-left: 20px;
+}
+
+.gnb-list {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-right: 30px;
+}
+
+.gnb-item a {
+  font-size: 16px;
+  /* bold */
+  font-weight: 700;
+  transition: color 300ms ease-in-out;
+}
+
+.gnb-item a:hover {
+  color: red;
+}
+
+.lnb-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: rgb(235, 27, 27);
+  border-top: 3px solid rgb(255, 213, 23);
+}
+
+.lnb-list {
+  display: flex;
+  padding: 20px 0;
+}
+
+.lnb-item:first-child {
+  margin-left: 10px;
+}
+
+.lnb-item {
+  padding: 0 20px;
+}
+
+.lnb-item a {
+  color: #fff;
+}
+
+.background { 
+  height: 600px;
+  background-image: url('./images/back.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.food-box {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.food-box-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.food-box-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #e1e1e1;
+  margin-right: 30px;
+}
+
+.food-box-item:last-child {
+  margin-right: 0;
+}
+
+.food-box-item a {
+  transition: opacity 300ms ease-in-out;
+}
+
+.food-box-item a:hover {
+  opacity: .7;
+}
+
+.food-box-item img {
+  border-radius: 10px 10px 0 0;
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.food-box-txt {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.mac-story-box {
+  position: sticky;
+  bottom: 0;
+  border-top: 3px solid rgb( 255, 213, 23);
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.mac-story-list {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mac-story-item img { 
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: rgb( 235, 27, 27);
+  padding: 20px 0;
+}
+
+.global-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mac-link-list {
+  margin-right: 80px;
+}
+
+.mac-link-item a {
+  display: block;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.mac-link-item:first-child a {
+  color: yellow;
+}
+
+.mac-info-list {
+  flex-grow: 1;
+}
+
+.mac-info-list li {
+  color: #fff;
+  padding: 5px 0;
+}
+
+.mac-icon-list {
+  display: flex;
+  align-items: center;
+}
+
+.mac-icon-list li {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 300ms ease-in-out;
+}
+
+.mac-icon-list li:hover {
+  background-color: rgb(235, 27, 27);
+}
+
+.mac-icon-list li:hover i {
+  color: #fff;
+}
+
+.mac-icon-list i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  color: rgb(235, 27, 27);
+  transition: color 300ms ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .gnb-nav {
+    padding: 5px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+  
+  .gnb-list {
+    width: 250px;
+    margin-right: 20px;
+  }
+
+  .background { 
+    height: 400px;
+  }
+
+  .food-box {
+    margin-top: 50px;
+  }
+  
+  .food-box-item img {
+    height: 150px;
+  }
+  
+  .food-box-txt {
+    margin: 20px auto;
+  }
+
+  .mac-story-box {
+    padding: 10px 0;
+  }
+  
+  .mac-story-list {
+    width: 50%;
+  }
+  
+  .mac-story-item img { 
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sm-only {
+    display: block;
+  }
+
+  .sm-hidden {
+    display: none;
+  }
+
+  .gnb-nav {
+    padding: 0;
+  }
+
+  .logo img {
+    width: 70px;
+    margin-left: 20px;
+  }
+  
+  .gnb-icon-button {
+    margin-right: 15px;
+  }
+
+  .lnb-list {
+    padding: 10px 0;
+  }
+
+  .background { 
+    height: 200px;
+  }
+
+  .food-box {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .food-box-list {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  
+  .food-box-item {
+    width: 90%;
+    margin-right: 0;
+    margin: 10px auto;
+  }
+
+  .food-box-item:last-child {
+    margin: 10px auto;
+  }
+  
+  .food-box-item img {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .food-box-txt {
+    margin: 20px auto;
+  }
+
+  .mac-story-box {
+    padding: 10px 0;
+  }
+  
+  .mac-story-list {
+    width: 80%;
+  }
+  
+  .mac-story-item img { 
+    width: 50px;
+    height: 50px;
+  }
+  
+  .global-footer {
+    flex-wrap: wrap;
+  }
+  
+  .mac-link-list {
+    margin-right: 0;
+  }
+  
+  .mac-info-list {
+    text-align: right;
+  }
+  
+  .mac-icon-list {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .mac-icon-list li {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 300ms ease-in-out;
+  }
+  
+  .mac-icon-list li:hover {
+    background-color: rgb(235, 27, 27);
+  }
+  
+  .mac-icon-list li:hover i {
+    color: #fff;
+  }
+  
+  .mac-icon-list i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: rgb(235, 27, 27);
+    transition: color 300ms ease-in-out;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 32px 20px;
+    z-index: 200;
+    transform: translate(-200px, 0);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .sidebar.is-active {
+    transform: translate(0, 0);
+  } 
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(63, 65, 80, 0.5);
+    display: none;
+    transition: display 200ms ease-in-out;
+  }
+
+  .overlay.is-active {
+    display: block;
+  }
+}
