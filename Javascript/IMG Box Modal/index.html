@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal</title>  
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <button type="button" id="open-btn">모달열기</button>
+
+    <div class="img-list">
+      <img src="./images/img1.jpg" alt="img1">
+      <img src="./images/img2.jpg" alt="img2">
+      <img src="./images/img3.jpg" alt="img3">
+      <img src="./images/img4.jpg" alt="img4">
+      <img src="./images/img5.jpg" alt="img5">
+    </div>
+
+    <div id="img-modal">
+      <div id="img-modal-box">
+        <buttton type="button" id="img-modal-btn" class="close-btn">X</buttton>
+        <div id="img-wrapper">
+          <img src="./images/img1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="modal">
+      <div id="modal-box">
+        <div id="modal-head">
+          <span>모달 타이틀</span>
+          <button type="button" id="modal-close" class="close-btn">X</button>
+        </div>
+        <div id="modal-sec">
+          <img src="./images/img3.jpg" alt="modal-sec-img">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore quo rem velit, architecto, porro eos eveniet soluta fuga nesciunt corporis dolorum mollitia harum cumque tempore at. Aliquam asperiores autem et.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis necessitatibus voluptatibus maxime illum dolores beatae sint est error exercitationem distinctio dignissimos consequatur harum laborum provident, facilis, dolor quibusdam id eius.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+</body>
+</html>
