@@ -51,8 +51,11 @@ nav {
 .background {
   height: 600px;
   background-image: url('./images/back.jpeg');
+  /* display 설정할 때 바둑판처럼 남은 공간에 이미지 반복 여부 설정 */
   background-repeat: no-repeat;
+  /* 배경 이미지 위치 설정 */
   background-position: center;
+  /* object-fit처럼 이미지 사이즈 설정 */
   background-size: cover;
 }
 
